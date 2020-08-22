@@ -12,6 +12,7 @@ class Doctor
   def new_appointment(date, patient)
     newApp = Appointment.new(date, patient, self)
     self.add_appointment(newApp)
+    self.add_patient(patient)
     return newApp
   end
 
@@ -35,6 +36,10 @@ class Doctor
 
   def appointments
     @appointments
+  end
+
+  def patients
+    @patients
   end
 
 end
