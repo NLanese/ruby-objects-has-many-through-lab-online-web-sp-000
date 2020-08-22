@@ -20,4 +20,11 @@ class Patient
     return nil
   end
 
+  def add_doctor(doc)
+    if !(self.doctors.include?(doc))
+      @doctors << doc
+    end
+    return nil
+  end
+
 end
