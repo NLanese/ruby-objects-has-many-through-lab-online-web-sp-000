@@ -5,5 +5,6 @@ class Patient
   def initialize(inputName)
     @name = inputName
     @@all << self
+  end
 
 end
