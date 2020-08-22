@@ -27,4 +27,12 @@ class Patient
     return nil
   end
 
+  def doctors
+    @doctors
+  end
+
+  def appointments
+    @appointments
+  end
+
 end
