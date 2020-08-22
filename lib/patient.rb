@@ -15,6 +15,7 @@ class Patient
     self.add_doctor(doctor)
     doctor.add_appointment(newApp)
     doctor.add_patient(self)
+    return new_appointment
   end
 
   def add_appointment(app)
