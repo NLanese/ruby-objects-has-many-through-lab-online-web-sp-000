@@ -25,4 +25,8 @@ class Doctor
     return @@all
   end
 
+  def appointments
+    @appointments
+  end
+
 end
