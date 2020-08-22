@@ -15,7 +15,7 @@ class Patient
 
   def add_appointment(app)
     if !(self.appointments.include?(app))
-      @appointments << app 
+      @appointments << app
     end
     return nil
   end
