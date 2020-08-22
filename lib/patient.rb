@@ -17,7 +17,7 @@ class Patient
     self.add_doctor(doctor)
     doctor.add_appointment(newApp)
     doctor.add_patient(self)
-    binding.pry
+  #  binding.pry
     return newApp
   end
 
