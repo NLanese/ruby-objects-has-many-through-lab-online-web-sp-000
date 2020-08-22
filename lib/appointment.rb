@@ -14,4 +14,12 @@ class Appointment
     @@all
   end
 
+  self.new(date, patient, doctor)
+    @date = date
+    @patient = patient
+    @doctor = doctor
+    @doctor.add_appointment(self)
+    @@all << self
+  end
+
 end
