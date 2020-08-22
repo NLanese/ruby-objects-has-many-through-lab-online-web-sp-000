@@ -14,7 +14,7 @@ class Appointment
     @@all
   end
 
-  self.new(date, patient, doctor)
+  def self.new(date, patient, doctor)
     @date = date
     @patient = patient
     @doctor = doctor
