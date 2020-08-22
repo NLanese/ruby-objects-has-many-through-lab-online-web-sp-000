@@ -17,6 +17,7 @@ class Doctor
     if !(self.appointments.include?(app))
       @appointments << app
     end
+    return nil
   end
 
 
