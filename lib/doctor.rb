@@ -6,6 +6,7 @@ class Doctor
     @name = inputName
     @@all << self
     @appointments = []
+    @patients = []
   end
 
   def new_appointment(date, patient)
@@ -17,6 +18,13 @@ class Doctor
   def add_appointment(app)
     if !(self.appointments.include?(app))
       @appointments << app
+    end
+    return nil
+  end
+
+  def add_patient(pat)
+    if !(self.patients.include?(pat))
+      @patients << pat
     end
     return nil
   end
